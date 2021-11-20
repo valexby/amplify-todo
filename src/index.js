@@ -6,7 +6,16 @@ import reportWebVitals from "./reportWebVitals";
 import Amplify from "aws-amplify";
 import awsconfig from "./aws-exports";
 
-Amplify.configure(awsconfig);
+Amplify.configure({
+    Auth: {
+        identityPoolId: 'ap-south-1:bead70ce-6f68-45b4-8d2a-9a21ace5d937'.
+        region: 'ap-south-1',
+        identityPoolRegion: 'ap-south-1',
+        userPoolId: 'ap-south-1_BZuE8ATRL',
+        userPoolWebClientId: '7f2vbrs66r2tpbfsb71n3dro9g',
+        authenticationFlowType: 'USER_PASSWORD_AUTH',
+    }
+});
 
 ReactDOM.render(
   <React.StrictMode>
