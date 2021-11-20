@@ -8,7 +8,7 @@ import awsconfig from "./aws-exports";
 
 Amplify.configure({
     Auth: {
-        identityPoolId: 'ap-south-1:bead70ce-6f68-45b4-8d2a-9a21ace5d937'.
+        identityPoolId: 'ap-south-1:bead70ce-6f68-45b4-8d2a-9a21ace5d937',
         region: 'ap-south-1',
         identityPoolRegion: 'ap-south-1',
         userPoolId: 'ap-south-1_BZuE8ATRL',
